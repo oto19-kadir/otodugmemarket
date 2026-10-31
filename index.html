@@ -27,6 +27,8 @@ a{color:inherit}.bt,button{font:inherit;cursor:pointer;border:1px solid var(--ln
 .sr input{flex:1;min-width:0;padding:14px;border-radius:10px;border:0;font:inherit;color:#0f1c2e;background:#fff}
 h2{font-size:1.3rem;margin:28px 0 12px;letter-spacing:-.02em}
 .brw{margin:18px 0 8px}.br{display:flex;flex-wrap:wrap;gap:8px}
+.brt{display:none;width:100%;margin:18px 0 0;padding:14px 16px;border-radius:12px;font:inherit;font-weight:700;align-items:center;justify-content:space-between;background:var(--sf);color:var(--ink);border:1px solid var(--ln)}
+@media(max-width:700px){.brt{display:flex}.brw{display:none;margin-top:10px}.brw.open{display:block}}
 .tl{flex:0 1 auto;padding:8px 12px;line-height:1.2;font-size:.78rem;font-weight:700;letter-spacing:.02em;border-radius:999px;display:flex;gap:8px;align-items:center;background:transparent}
 .tl small{color:var(--mu)}.tl.on{background:var(--ac);color:var(--ai);border-color:var(--ac)}.tl.on small{color:var(--ai)}
 .cnt{color:var(--mu);font-size:.9rem;margin-bottom:10px}
@@ -52,7 +54,8 @@ footer{background:var(--hero);color:#b9c6d6;padding:28px 0 90px;font-size:.9rem}
 <section class="hero"><div class="w"><h1>Aracınıza uygun cam düğmesini bulun</h1><p>Cam açma düğmesi ve cam anahtarı yedek parçaları. Kod, OEM numarası ya da araç adıyla arayın. Bulamadıysanız şasi numaranızı WhatsApp’tan gönderin, istediğiniz ürünü birlikte bulalım.</p>
 <div class="sr"><input id="q" type="search" placeholder="Ör. AN-221, Doblo, 735417034" aria-label="Parça ara"></div></div></section>
 <main class="w"><section id="adm" hidden></section>
-<div class="brw"><div class="br" id="br" role="tablist" aria-label="Marka seçin"></div></div>
+<button id="brt" class="brt" type="button" aria-expanded="false"><span id="brl">Marka seçin: Tüm markalar</span><span id="bra">▾</span></button>
+<div class="brw" id="brw"><div class="br" id="br" role="tablist" aria-label="Marka seçin"></div></div>
 <h2>Parçalar</h2><div class="cnt" id="cnt"></div><div class="grid" id="grid"></div>
 <div style="text-align:center;margin-top:18px"><button id="more" class="pri" hidden>Daha fazla göster</button></div>
 <div class="fe"><div><b>Doğru parça kontrolü</b><span>Araç bilgisini ve şasi numaranızı WhatsApp’tan gönderin, uyumu birlikte kontrol edelim.</span></div><div><b>Kod ve OEM ile arama</b><span>Katalog kodu veya OEM numarasını yazın, parça hemen listelensin.</span></div><div><b>Hızlı dönüş</b><span>Fiyat ve stok bilgisi için tek dokunuşla WhatsApp’tan yazın.</span></div></div></main>
@@ -87,7 +90,9 @@ const card=it=>{const im=it.im,p='';return '<article class="cd"><a href="/urun/'
 function tiles(){const gs=[...new Set(items.map(i=>i.g))].filter(Boolean);$("br").innerHTML=[""].concat(gs).map(g=>'<button class="tl'+(S.g===g?" on":"")+'" data-g="'+esc(g)+'">'+esc(g||"Tüm markalar")+"<small>"+items.filter(i=>!g||i.g===g).length+"</small></button>").join("")}
 function render(){const q=norm(S.q);const all=items.filter(it=>(!S.g||it.g===S.g)&&(!q||it.h.includes(q)));$("cnt").textContent=all.length+" parça";$("more").hidden=all.length<=S.lim;$("grid").innerHTML=all.length?all.slice(0,S.lim).map(card).join(""):'<p class="em">Sonuç yok. Kodu kısaltın ya da WhatsApp’tan sorun.</p>'}
 $("q").oninput=e=>{S.q=e.target.value;S.lim=48;render()};
-$("br").onclick=e=>{const b=e.target.closest("button");if(!b)return;S.g=b.dataset.g;S.lim=48;tiles();render();$("grid").scrollIntoView({behavior:"smooth"})};
+function brl(){$("brl").textContent="Marka seçin: "+(S.g||"Tüm markalar")}
+$("brt").onclick=()=>{const o=$("brw").classList.toggle("open");$("brt").setAttribute("aria-expanded",o);$("bra").textContent=o?"▴":"▾"};
+$("br").onclick=e=>{const b=e.target.closest("button");if(!b)return;S.g=b.dataset.g;S.lim=48;tiles();render();brl();$("brw").classList.remove("open");$("brt").setAttribute("aria-expanded","false");$("bra").textContent="▾";$("grid").scrollIntoView({behavior:"smooth"})};
 $("more").onclick=()=>{S.lim+=48;render()};
 $("lg").innerHTML='<svg width="40" height="29" viewBox="0 8 64 46" aria-hidden="true"><path d="M0 52L6 16Q8 10 14 10H50Q56 10 58 16L64 52Z" fill="#e8590c"/><rect x="22" y="24" width="20" height="22" rx="5" fill="#fff"/><polygon points="32,29 37,35 27,35" fill="#e8590c"/><polygon points="32,43 27,37 37,37" fill="#e8590c"/></svg><span>Oto<b>Düğme</b><small>MARKET</small></span>';$("fb").textContent=BRAND;
 const hi=wa("Merhaba, web sitenizden yazıyorum.");["w1","w2","w3","w4"].forEach(i=>$(i).href=hi);
