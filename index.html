@@ -83,7 +83,7 @@ const U=it=>cfg.ov[it.code]!=null?cfg.ov[it.code]:it.usd;
 const stale=(Date.now()-new Date(cfg.at+"T12:00:00"))>10*864e5;
 const tl=it=>{const u=U(it);return SHOWP&&u>0&&!stale?Math.ceil(u*(1+cfg.markup/100)*cfg.rate*(1+cfg.kdv/100)).toLocaleString("tr-TR")+" TL":""};
 const wa=t=>"https://wa.me/"+WA+"?text="+encodeURIComponent(t);
-const norm=s=>s.toLocaleLowerCase("tr").replace(/[\s\-\/.]/g,"");
+const norm=s=>s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/ı/g,"i").replace(/ß/g,"ss").replace(/[\s\-\/.]/g,"");
 items.forEach(it=>it.h=norm(it.code+"kraw"+it.name+it.oem+it.g));
 const S={q:"",g:"",lim:48};
 const card=it=>{const im=it.im,p='';return '<article class="cd"><a href="/urun/'+it.s+'/" style="text-decoration:none;color:inherit;display:contents"><div class="ph">'+(im?'<img loading="lazy" width="200" height="200" alt="'+esc(it.code+" KRAW "+it.name)+'" src="/img/'+it.s+'.webp">':"<span>Fotoğraf yakında</span>")+'</div><div class="in"><div class="cc">'+esc(it.code)+" KRAW</div><h3>"+esc(it.name)+"</h3>"+'<div class="mu">'+(it.oem?"OEM: "+esc(it.oem):"")+'</div><div class="mk">MARKA: KRAW</div></div></a><div class="in" style="padding-top:0;flex:0">'+(p?'<div class="pr">'+p+" <small>KDV dahil</small></div>":"")+'<a class="bt" target="_blank" rel="noopener" href="'+wa("Merhaba, "+it.code+" KRAW "+it.name+" için fiyat ve stok bilgisi almak istiyorum.")+'">Fiyat için WhatsApp’tan sor</a></div></article>'};
