@@ -14,7 +14,7 @@ Bu depo otodugmemarket.com sitesidir. Kullanıcı bu siteye **"Düğme"** der. S
 Statik site: `index.html` (katalog, JS içinde DATA dizisi; BRAND="OtoDüğme Market", WA="905469193354"), `urun/*/index.html` (1480 ürün sayfası, aynı alt bilgi), `img/`, `sitemap.xml`, `netlify.toml` (publish ".").
 
 ## Bekleyen işler
-- **Yeni 4 sütunlu alt bilgi** (Oto19 bilgileri, kargo firmaları Yurtiçi/Aras/DHL/HepsiJet/Sürat, Instagram @oto19kartal, Künye/SSS/Kargo/Nasıl sipariş bölümleri, ödeme içeriği yok): `bekleyen/alt-bilgi` dalında hazır ve test edildi. Kullanıcı "Alma beklet" dedi; "Düğme alt bilgiyi canlıya al" deyince main'e alınır. 1 Kasım 2026: araç seçiciyle çakışmaması için şimdiki main'e yeniden uygulandı ve "Bu site ETBİS’e kayıtlıdır." satırı eklendi (kullanıcı ETBİS'e kayıt oldu, QR kodu kaldırılmış). Dal: claude/bold-keller-az3ld6.
+- **Yeni 4 sütunlu alt bilgi** (Oto19 bilgileri, kargo firmaları Yurtiçi/Aras/DHL/HepsiJet/Sürat, Instagram @otodugmemarketi, Künye/SSS/Kargo/Nasıl sipariş bölümleri, ödeme içeriği yok): `bekleyen/alt-bilgi` dalında hazır ve test edildi. Kullanıcı "Alma beklet" dedi; "Düğme alt bilgiyi canlıya al" deyince main'e alınır. 1 Kasım 2026: araç seçiciyle çakışmaması için şimdiki main'e yeniden uygulandı ve "Bu site ETBİS’e kayıtlıdır." satırı eklendi (kullanıcı ETBİS'e kayıt oldu, QR kodu kaldırılmış). Dal: claude/bold-keller-az3ld6.
 - **Netlify'dan kullanıcının kendi hostingine taşıma** (Linux, cPanel; aday Hosting Dünyam Professional). Sıra: önce hostinge yükle ve test et, sonra GoDaddy DNS'i hostinge yönlendir, site oradan açılınca Netlify bağlantısını kaldır. Netlify erken kaldırılırsa site kapanır.
 
 İş planı (Kartal ile ortak): https://claude.ai/artifact/DYkm8dfQtVcLpUbrX2RWqa
