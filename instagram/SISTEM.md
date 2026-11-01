@@ -19,4 +19,4 @@ Kullanıcı isteği (1 Kasım 2026): paylaşımlar sürekli devam etsin, **saatt
 ## Zamanlanmış görev
 - "Düğme Instagram haftalık paylaşımlar" (trig_017WdeSgE9s2E7YQQMRE37ug): her çarşamba 14:17 (İstanbul), ilk çalışma 4 Kasım 2026; her seferinde ertesi günden başlayan 7 günü doldurur.
 - Görevin Metricool'a erişmesi için kullanıcının claude.ai'deki zamanlanmış görev ayarından Metricool bağlantısını eklemesi gerekir (oturumdan eklenemedi).
-- 1 Kasım 2026 itibarıyla 4 Kasım 22:00'ye kadar bütün saatler dolu (39 + 11 ürün paylaşıldı veya sırada).
+- 1 Kasım 2026 itibarıyla 4 Kasım 22:00ye kadar bütün saatler dolu: gönderiler ve aynı saatte hikâyeler (1 Kasım 21:00dan itibaren).
