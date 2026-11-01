@@ -469,3 +469,125 @@ S3 quattro |  | 310 | B | ST7 | 2020-2026
 # Audi | e-tron | GE
 50 quattro |  | 313 | E | 1A | 2019-2022
 55 quattro |  | 408 | E | 1A | 2019-2022
+
+# Audi | 80 | B3
+1.6 | PN | 75 | B | M5 | 1986-1991
+1.8 | JN | 90 | B | M5 | 1986-1991
+1.8 S | PM | 88 | B | M5 | 1986-1991
+2.0 | 3A | 113 | B | M5 | 1988-1991
+1.6 TD | RA | 80 | D | M5 | 1988-1991
+
+# Audi | 90 | B3
+2.0 20V | 6A | 160 | B | M5 | 1987-1991
+2.3 | NG | 133 | B | M5 | 1987-1991
+
+# Audi | 80 Avant / Cabrio | B4
+1.6 | ADA | 101 | B | M5 | 1993-1996
+2.0 | ABT | 90 | B | M5 | 1991-1996
+2.0 | ABK | 115 | B | A4 | 1991-1996
+2.6 V6 | ABC | 150 | B | M5 | 1992-1996
+2.8 V6 quattro | AAH | 174 | B | M5 | 1991-1996
+1.9 TDI | 1Z | 90 | D | M5 | 1991-1996
+
+# Audi | A1 | 8X
+1.2 TFSI | CBZA | 86 | B | M5 | 2010-2015
+1.4 TFSI | CAXA | 122 | B | M6 | 2010-2015
+1.4 TFSI | CAXA | 122 | B | ST7 | 2010-2015
+1.4 TFSI | CAVG | 185 | B | ST7 | 2010-2015
+1.4 TFSI COD | CPTA | 140 | B | ST7 | 2012-2015
+1.0 TFSI | CHZB | 95 | B | M5 | 2015-2018
+1.0 TFSI | CHZB | 95 | B | ST7 | 2015-2018
+1.4 TFSI | CZCA | 125 | B | ST7 | 2015-2018
+1.4 TFSI COD | CZEA | 150 | B | ST7 | 2015-2018
+1.8 TFSI | CJZA | 192 | B | ST7 | 2015-2018
+2.0 TFSI S1 quattro | CWZA | 231 | B | M6 | 2014-2018
+1.6 TDI | CAYB | 90 | D | M5 | 2010-2015
+1.6 TDI | CAYC | 105 | D | M5 | 2010-2015
+1.6 TDI | CAYB | 90 | D | ST7 | 2010-2015
+2.0 TDI | CFHD | 143 | D | M6 | 2011-2015
+1.4 TDI | CUSB | 90 | D | M5 | 2015-2018
+1.4 TDI | CUSB | 90 | D | ST7 | 2015-2018
+1.6 TDI | CXMB | 116 | D | M5 | 2015-2018
+
+# Audi | A1 | GB
+25 TFSI |  | 95 | B | M5 | 2018-2026
+30 TFSI |  | 110 | B | M6 | 2018-2026
+30 TFSI |  | 110 | B | ST7 | 2018-2026
+35 TFSI |  | 150 | B | ST7 | 2018-2026
+40 TFSI |  | 207 | B | ST6 | 2018-2026
+
+# Audi | A2 | 8Z
+1.4 | AUA | 75 | B | M5 | 2000-2005
+1.4 | BBY | 75 | B | M5 | 2000-2005
+1.6 FSI | BAD | 110 | B | M5 | 2002-2005
+1.2 TDI 3L | ANY | 61 | D | ASG5 | 2001-2005
+1.4 TDI | AMF | 75 | D | M5 | 2000-2005
+1.4 TDI | BHC | 90 | D | M5 | 2003-2005
+
+# Audi | A4 Allroad | 8KH
+2.0 TFSI quattro | CDNC | 211 | B | ST7 | 2009-2016
+2.0 TFSI quattro | CNCD | 225 | B | ST7 | 2012-2016
+2.0 TDI quattro | CAHA | 170 | D | M6 | 2009-2012
+2.0 TDI quattro | CGLC | 177 | D | ST7 | 2012-2016
+3.0 TDI V6 quattro | CCWA | 240 | D | ST7 | 2009-2012
+3.0 TDI V6 quattro | CDUD | 245 | D | ST7 | 2012-2016
+
+# Audi | A6 Allroad | 4FH
+2.7 TDI V6 quattro | BPP | 180 | D | T6 | 2006-2011
+3.0 TDI V6 quattro | BMK | 233 | D | T6 | 2006-2008
+3.0 TDI V6 quattro | CDYA | 240 | D | T6 | 2008-2011
+3.2 FSI V6 quattro | BKH | 255 | B | T6 | 2006-2008
+3.0 TFSI quattro | CAJA | 290 | B | T6 | 2008-2011
+4.2 FSI V8 quattro | BVJ | 350 | B | T6 | 2006-2011
+
+# Audi | A8 | D2
+2.8 V6 | ACK | 193 | B | A5 | 1994-2002
+3.7 V8 quattro | AKJ | 230 | B | A5 | 1994-2002
+4.2 V8 quattro | ABZ | 300 | B | A5 | 1994-2002
+2.5 TDI V6 | AKN | 150 | D | A5 | 1997-2002
+3.3 TDI V8 quattro | AKF | 224 | D | A5 | 2000-2002
+
+# Audi | A8 | D3
+3.0 V6 | ASN | 220 | B | CVT | 2003-2010
+3.2 FSI V6 | AUK | 260 | B | CVT | 2004-2010
+4.2 V8 quattro | BFM | 335 | B | T6 | 2002-2010
+6.0 W12 quattro | BHT | 450 | B | T6 | 2004-2010
+3.0 TDI V6 quattro | ASB | 233 | D | T6 | 2004-2010
+4.0 TDI V8 quattro | ASE | 275 | D | T6 | 2003-2005
+4.2 TDI V8 quattro | BVN | 326 | D | T6 | 2005-2010
+
+# Audi | A8 | D5
+50 TDI quattro |  | 286 | H | T8 | 2017-2026
+55 TFSI quattro |  | 340 | H | T8 | 2017-2026
+60 TFSI e quattro |  | 449 | H | T8 | 2019-2026
+
+# Audi | Q3 Sportback | F3N
+35 TFSI |  | 150 | B | ST7 | 2019-2026
+45 TFSI quattro |  | 230 | B | ST7 | 2019-2026
+45 TFSI e |  | 245 | H | ST6 | 2021-2026
+35 TDI |  | 150 | D | ST7 | 2019-2026
+
+# Audi | Q5 Sportback | FYT
+40 TFSI quattro |  | 204 | H | ST7 | 2021-2024
+45 TFSI quattro |  | 265 | H | ST7 | 2021-2024
+35 TDI |  | 163 | D | ST7 | 2021-2024
+40 TDI quattro |  | 204 | H | ST7 | 2021-2024
+
+# Audi | Q8 | 4MN
+45 TDI quattro |  | 231 | H | T8 | 2018-2026
+50 TDI quattro |  | 286 | H | T8 | 2018-2026
+55 TFSI quattro |  | 340 | H | T8 | 2018-2026
+
+# Audi | R8 | 42
+4.2 FSI V8 quattro | BYH | 420 | B | M6 | 2007-2015
+4.2 FSI V8 quattro | BYH | 430 | B | ST7 | 2012-2015
+5.2 FSI V10 quattro | BUJ | 525 | B | M6 | 2009-2015
+5.2 FSI V10 quattro | CMPA | 550 | B | ST7 | 2012-2015
+
+# Audi | R8 | 4S
+5.2 FSI V10 quattro |  | 540 | B | ST7 | 2015-2023
+5.2 FSI V10 plus quattro |  | 610 | B | ST7 | 2015-2023
+
+# Audi | e-tron GT | F8
+quattro |  | 476 | E | 2A | 2021-2026
+RS quattro |  | 598 | E | 2A | 2021-2026

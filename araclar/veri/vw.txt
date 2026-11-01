@@ -69,7 +69,7 @@
 1.9 TDI | ASZ | 130 | D | M6 | 2001-2004
 1.9 TDI | ARL | 150 | D | M6 | 2000-2004
 
-# Volkswagen | Bora | 1J
+# Volkswagen | Bora (Jetta IV) | 1J
 1.4 16V | AXP | 75 | B | M5 | 2000-2005
 1.6 | AKL | 101 | B | M5 | 1998-2000
 1.6 | BFQ | 102 | B | M5 | 2000-2005
@@ -815,3 +815,128 @@ Pro S |  | 204 | E | 1A | 2020-2026
 Pure |  | 170 | E | 1A | 2021-2026
 Pro |  | 204 | E | 1A | 2020-2026
 GTX 4Motion |  | 299 | E | 1A | 2021-2026
+
+# Volkswagen | Golf II | 19E
+1.3 | NZ | 55 | B | M4 | 1985-1992
+1.6 | EZ | 75 | B | M5 | 1983-1992
+1.6 | PN | 72 | B | M5 | 1986-1992
+1.8 | GU | 90 | B | M5 | 1983-1992
+1.8 | RP | 90 | B | M5 | 1987-1992
+1.8 GTI | EV | 112 | B | M5 | 1983-1987
+1.8 GTI 16V | KR | 139 | B | M5 | 1985-1992
+1.8 GTI 16V | PL | 129 | B | M5 | 1987-1992
+1.6 D | ME | 54 | D | M5 | 1983-1992
+1.6 TD | JR | 70 | D | M5 | 1984-1992
+
+# Volkswagen | Jetta II | 16E
+1.3 | NZ | 55 | B | M4 | 1984-1992
+1.6 | EZ | 75 | B | M5 | 1984-1992
+1.8 | GU | 90 | B | M5 | 1984-1992
+1.8 | RP | 90 | B | M5 | 1987-1992
+1.8 GT 16V | KR | 139 | B | M5 | 1986-1992
+1.6 D | ME | 54 | D | M5 | 1984-1992
+1.6 TD | JR | 70 | D | M5 | 1984-1992
+
+# Volkswagen | Passat B3 | 31
+1.6 | 1F | 72 | B | M5 | 1988-1993
+1.8 | RP | 90 | B | M5 | 1988-1993
+1.8 | PB | 112 | B | M5 | 1988-1993
+2.0 16V | 9A | 136 | B | M5 | 1988-1993
+2.8 VR6 | AAA | 174 | B | M5 | 1991-1993
+1.6 TD | RA | 80 | D | M5 | 1988-1993
+1.9 D | 1Y | 68 | D | M5 | 1991-1993
+
+# Volkswagen | Passat B4 | 3A
+1.6 | AEK | 101 | B | M5 | 1993-1996
+1.8 | ADZ | 90 | B | M5 | 1993-1996
+2.0 | 2E | 115 | B | M5 | 1993-1996
+2.0 | 2E | 115 | B | A4 | 1993-1996
+2.8 VR6 | AAA | 174 | B | M5 | 1993-1996
+1.9 TD | AAZ | 75 | D | M5 | 1993-1996
+1.9 TDI | 1Z | 90 | D | M5 | 1993-1996
+1.9 TDI | AFN | 110 | D | M5 | 1995-1996
+
+# Volkswagen | Corrado | 53I
+1.8 16V | KR | 136 | B | M5 | 1988-1995
+1.8 G60 | PG | 160 | B | M5 | 1988-1993
+2.0 16V | 9A | 136 | B | M5 | 1992-1995
+2.9 VR6 | ABV | 190 | B | M5 | 1992-1995
+
+# Volkswagen | Golf Plus | 5M
+1.4 16V | BUD | 80 | B | M5 | 2005-2014
+1.4 TSI | CAXA | 122 | B | M6 | 2008-2014
+1.4 TSI | CAXA | 122 | B | DSG7 | 2008-2014
+1.2 TSI | CBZB | 105 | B | M6 | 2010-2014
+1.6 | BSE | 102 | B | M5 | 2005-2010
+1.6 | BSE | 102 | B | T6 | 2005-2010
+1.6 FSI | BLF | 115 | B | M6 | 2005-2008
+1.9 TDI | BKC | 105 | D | M5 | 2005-2009
+1.9 TDI | BLS | 105 | D | DSG6 | 2005-2009
+2.0 TDI | BKD | 140 | D | M6 | 2005-2009
+1.6 TDI | CAYC | 105 | D | M5 | 2009-2014
+1.6 TDI | CAYC | 105 | D | DSG7 | 2009-2014
+2.0 TDI | CBDB | 140 | D | M6 | 2009-2014
+
+# Volkswagen | Golf Sportsvan | AM1
+1.2 TSI | CJZA | 110 | B | M6 | 2014-2017
+1.4 TSI | CZDA | 125 | B | M6 | 2014-2017
+1.4 TSI | CZDA | 150 | B | DSG7 | 2014-2017
+1.0 TSI | DKRF | 115 | B | M6 | 2017-2020
+1.5 TSI | DADA | 130 | B | M6 | 2017-2020
+1.5 TSI | DADA | 150 | B | DSG7 | 2017-2020
+1.6 TDI | CXXB | 110 | D | M5 | 2014-2017
+1.6 TDI | DGTE | 115 | D | DSG7 | 2017-2020
+2.0 TDI | CRBC | 150 | D | M6 | 2014-2020
+2.0 TDI | CRBC | 150 | D | DSG6 | 2014-2020
+
+# Volkswagen | Golf VII Variant | AU5
+1.0 TSI | DKRF | 110 | B | M6 | 2017-2020
+1.2 TSI | CJZA | 105 | B | M6 | 2013-2017
+1.4 TSI | CZCA | 125 | B | DSG7 | 2014-2017
+1.5 TSI | DADA | 150 | B | DSG7 | 2017-2020
+1.6 TDI | CLHA | 105 | D | M5 | 2013-2017
+1.6 TDI | DGTE | 115 | D | DSG7 | 2017-2020
+2.0 TDI | CRBC | 150 | D | DSG6 | 2013-2020
+
+# Volkswagen | Jetta VII | BU3
+1.4 TSI | CZDA | 150 | B | A8 | 2018-2026
+1.5 TSI | DADA | 160 | B | A8 | 2021-2026
+2.0 TSI GLI |  | 228 | B | DSG7 | 2019-2026
+
+# Volkswagen | Phaeton | 3D
+3.2 V6 | BKL | 241 | B | T5 | 2002-2008
+3.6 V6 FSI | CMVA | 280 | B | T6 | 2008-2016
+4.2 V8 | BGH | 335 | B | T6 | 2002-2016
+6.0 W12 | BAN | 420 | B | T5 | 2002-2011
+3.0 V6 TDI | BMK | 225 | D | T6 | 2004-2008
+3.0 V6 TDI | CARA | 240 | D | T6 | 2008-2016
+5.0 V10 TDI | AJS | 313 | D | T5 | 2003-2010
+
+# Volkswagen | Tiguan Allspace | BW2
+1.4 TSI | CZDA | 150 | B | DSG6 | 2017-2018
+1.5 TSI | DPCA | 150 | B | DSG7 | 2018-2024
+2.0 TSI 4Motion | DKZB | 190 | B | DSG7 | 2017-2024
+2.0 TDI | DFGA | 150 | D | DSG7 | 2017-2024
+2.0 TDI 4Motion | DFHA | 190 | D | DSG7 | 2017-2024
+
+# Volkswagen | Multivan T7 | ST
+1.5 TSI |  | 136 | B | DSG7 | 2022-2026
+2.0 TSI |  | 204 | B | DSG7 | 2022-2026
+1.4 eHybrid |  | 218 | H | DSG6 | 2022-2026
+2.0 TDI |  | 150 | D | DSG7 | 2022-2026
+
+# Volkswagen | Transporter T7 | ST
+2.0 TDI |  | 110 | D | M6 | 2024-2026
+2.0 TDI |  | 150 | D | A8 | 2024-2026
+2.0 TDI |  | 170 | D | A8 | 2024-2026
+
+# Volkswagen | ID.5 | E3
+Pro |  | 174 | E | 1A | 2021-2026
+Pro |  | 204 | E | 1A | 2021-2026
+GTX 4Motion |  | 299 | E | 1A | 2022-2026
+
+# Volkswagen | ID.Buzz | EB
+Pro |  | 204 | E | 1A | 2022-2026
+
+# Volkswagen | ID.7 | ET
+Pro |  | 286 | E | 1A | 2023-2026

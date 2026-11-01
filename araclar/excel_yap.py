@@ -14,11 +14,14 @@ def sanziman(k):
     if k.startswith("ASG"): return f"{k[3:]} ileri Yarı Otomatik (ASG)"
     if k == "CVT": return "Multitronic (CVT) Şanzıman"
     if k == "1A": return "Tek vites (Otomatik)"
+    if k == "2A": return "2 ileri Otomatik"
+    if k == "M4": return "4 ileri Manuel"
     if k[0] == "M": return f"{k[1:]} ileri Manuel"
     if k[0] == "A": return f"{k[1:]} ileri Otomatik"
     if k[0] == "T": return f"{k[1:]} ileri Tiptronic"
     return k
 
+sira_m = ["Volkswagen", "Seat", "Skoda", "Audi", "Porsche"]
 sira = ["vw", "seat", "skoda", "audi", "porsche"]
 satirlar = []
 for ad in sira:
@@ -35,8 +38,15 @@ for ad in sira:
         motor, kod, hp, yk, sz, yil = p
         a, b = map(int, yil.split("-"))
         satirlar.append((marka, f"{marka} {model} {motor} ({kasa})", kod, f"{hp} beygir",
-                         YAKIT[yk], sanziman(sz), ", ".join(map(str, range(a, b + 1))), a))
+                         YAKIT[yk], sanziman(sz), ", ".join(map(str, range(a, b + 1))), a,
+                         f"{model}|{kasa}", model, len(satirlar)))
 
+# Marka > model adının ilk kelimesi > nesil başlangıç yılı > motor sırasına göre diz
+ilk = {}
+for i, r in enumerate(satirlar):
+    nes = r[1].rsplit(" (", 1)[0]
+    ilk.setdefault((r[0], r[8]), (r[9].split()[0], r[7], i))
+satirlar.sort(key=lambda r: (sira_m.index(r[0]), ilk[(r[0], r[8])], r[10]))
 wb = Workbook(); wb.remove(wb.active)
 BAS = ["Araç", "Motor kodu", "Beygir", "Yakıt", "Şanzıman", "Yıllar"]
 GEN = [44, 12, 12, 12, 30, 60]
