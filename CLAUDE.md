@@ -18,3 +18,7 @@ Statik site: `index.html` (katalog, JS içinde DATA dizisi; BRAND="OtoDüğme Ma
 - **Netlify'dan kullanıcının kendi hostingine taşıma** (Linux, cPanel; aday Hosting Dünyam Professional). Sıra: önce hostinge yükle ve test et, sonra GoDaddy DNS'i hostinge yönlendir, site oradan açılınca Netlify bağlantısını kaldır. Netlify erken kaldırılırsa site kapanır.
 
 İş planı (Kartal ile ortak): https://claude.ai/artifact/DYkm8dfQtVcLpUbrX2RWqa
+
+## Instagram (@otodugmemarketi)
+Paylaşımlar saatte bir, her gün 09:00–22:00 (Metricool, blogId 7778712). Düzen: `instagram/SISTEM.md` ve `instagram/hazirla.py` (bu dalda). Haftalık zamanlanmış görev her çarşamba 14:17 çalışır. Görsellere raw.githubusercontent üzerinden bu daldan erişilir; main'e push edilmez.
+Kullanıcıya her zaman Türkçe yaz.
