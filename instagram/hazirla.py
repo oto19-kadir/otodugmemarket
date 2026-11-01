@@ -5,7 +5,7 @@ Kullanım:  python3 instagram/hazirla.py <başlangıç YYYY-AA-GG veya YYYY-AA-G
 - Paylaşım saatleri: her gün 09:00–22:00 arası saatte bir (14 paylaşım/gün), Europe/Istanbul.
 - Daha önce paylaşılan veya sıraya konan ürünler instagram/paylasilan.json'da tutulur; tekrar seçilmez.
 - Sadece resmi olan ürünler (DATA[5] == 1) seçilir; marka grupları sırayla karıştırılır.
-- Çıktı: instagram/p/<kod>.jpg (1080x1350) ve instagram/sira.json (Metricool'a girilecek liste).
+- Çıktı: instagram/p/<kod>.jpg (1080x1350), instagram/p/<kod>-story.jpg (1080x1920, aynı saatte hikâye) ve instagram/sira.json (Metricool'a girilecek liste).
   Görsel adresi: https://raw.githubusercontent.com/oto19-kadir/otodugmemarket/claude/bold-keller-az3ld6/instagram/p/<kod>.jpg
   (instagram/ klasörü Netlify yayınını tetiklemez, netlify.toml'daki ignore kuralı.)
 - Metin kuralları: düzgün Türkçe, garanti iddiası yok, ödeme/fiyat yazılmaz (fiyat WhatsApp'tan).
@@ -123,6 +123,18 @@ def kart(kod, aciklama, oem, grup, slug, marka_adi):
     return yol
 
 
+def story(slug):
+    """Gönderi görselini hikâye boyutuna (1080x1920) yerleştirir: lacivert zemin, görsel ortada."""
+    kart_im = Image.open(os.path.join(CIKIS, slug + ".jpg")).convert("RGB")
+    W, H = 1080, 1920
+    im = Image.new("RGB", (W, H), LACI)
+    k = kart_im.resize((1000, int(kart_im.height * 1000 / kart_im.width)), Image.LANCZOS)
+    im.paste(k, ((W - k.width) // 2, (H - k.height) // 2))
+    yol = os.path.join(CIKIS, slug + "-story.jpg")
+    im.save(yol, "JPEG", quality=88, optimize=True)
+    return yol
+
+
 def metin(kod, aciklama, oem, slug, etiketler):
     t = f"{kod} KRAW – {aciklama}\n"
     if oem:
@@ -160,7 +172,8 @@ def main():
     for z, (kod, aciklama, oem, grup, slug, _) in zip(zamanlar, urunler):
         marka_adi, etiketler = ETIKET[grup]
         kart(kod, aciklama, oem, grup, slug, marka_adi)
-        sira.append({"kod": kod, "zaman": z, "gorsel": HAM_URL + slug + ".jpg",
+        story(slug)
+        sira.append({"kod": kod, "zaman": z, "gorsel": HAM_URL + slug + ".jpg", "story": HAM_URL + slug + "-story.jpg",
                      "metin": metin(kod, aciklama, oem, slug, etiketler)})
         paylasilan[kod] = z
     json.dump(sira, open(SIRA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

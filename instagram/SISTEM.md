@@ -7,8 +7,9 @@ Kullanıcı isteği (1 Kasım 2026): paylaşımlar sürekli devam etsin, **saatt
 2. `python3 instagram/hazirla.py <yarının tarihi> 7` → 98 ürün seçer, `instagram/p/<kod>.jpg` görsellerini (1080x1350) ve `instagram/sira.json` listesini yazar, `instagram/paylasilan.json` kaydını günceller.
 3. Sadece `instagram/` klasörünü commit edip `claude/bold-keller-az3ld6` dalına push et (main'e değil; main = canlı). Bu dal Netlify'da yayınlanmaz; site dosyalarına dokunma.
 4. Görsel adresi `https://raw.githubusercontent.com/oto19-kadir/otodugmemarket/claude/bold-keller-az3ld6/instagram/p/<slug>.jpg` açılıyor mu kontrol et.
-5. `sira.json`'daki her kayıt için Metricool `createScheduledPost`: blogId 7778712, providers instagram, instagramData type POST, autoPublish true, media [gorsel], text [metin], publicationDate {dateTime: zaman, timezone: "Europe/Istanbul"}.
-6. Hata olursa kalan kayıtları tekrar dene; başarısız olanları `sira.json`'da işaretleyip kullanıcıya bildir.
+5. Her kayıt için aynı saatte bir de hikâye gir: createScheduledPost, media [story], text "", instagramData type STORY.
+6. `sira.json`'daki her kayıt için Metricool `createScheduledPost`: blogId 7778712, providers instagram, instagramData type POST, autoPublish true, media [gorsel], text [metin], publicationDate {dateTime: zaman, timezone: "Europe/Istanbul"}.
+7. Hata olursa kalan kayıtları tekrar dene; başarısız olanları `sira.json`'da işaretleyip kullanıcıya bildir.
 
 ## Kurallar
 - Ürün seçimi: sadece resmi olan ürünler, daha önce paylaşılmamış olanlar, marka grupları sırayla karıştırılır.
