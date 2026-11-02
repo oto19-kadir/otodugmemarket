@@ -20,5 +20,5 @@ Statik site: `index.html` (katalog, JS içinde DATA dizisi; BRAND="OtoDüğme Ma
 İş planı (Kartal ile ortak): https://claude.ai/artifact/DYkm8dfQtVcLpUbrX2RWqa
 
 ## Instagram (@otodugmemarketi)
-Paylaşımlar saatte bir, her gün 09:00–22:00 (Metricool, blogId 7778712). Düzen: `instagram/SISTEM.md` ve `instagram/hazirla.py` (bu dalda). Haftalık zamanlanmış görev her çarşamba 14:17 çalışır. Görsellere raw.githubusercontent üzerinden bu daldan erişilir; main'e push edilmez.
+DURDURULDU (2 Kasım 2026): Metricool ücretsiz plan sınırı (ayda 20 gönderi). Ayrıntı instagram/SISTEM.md. Paylaşılmamış ürün dosyaları kullanıcıya verildi.
 Kullanıcıya her zaman Türkçe yaz.

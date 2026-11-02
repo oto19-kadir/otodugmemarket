@@ -1,3 +1,12 @@
+# DURDURULDU (2 Kasım 2026)
+Metricool ücretsiz planı ayda en fazla 20 gönderiye izin veriyor; saatte bir düzeni bu yüzden çalışmaz (önceden araştırılmadı).
+Kullanıcı isteğiyle: haftalık görev ve hatırlatma silindi, Metricool'da bekleyen 70 gönderi/hikâye taslağa çevrildi (yayınlanmaz).
+Paylaşılmamış 1.387 ürünün görselleri ve yazıları (Excel) kullanıcıya dosya olarak verildi; elle yükleyecek.
+Paylaşılan ürünler (Metricool üzerinden): AN-237B, AN-1360, AN-442, AN-730D, AN-3513B, AN-324, AN-828D, AN-886D, AN-1525, AN-1404, AN-1501, AN-3401D, AN-201, AN-3206, AN-1235.
+Bundan sonra Metricool'a toplu paylaşım girilmez; yeni bir araç önermeden önce sınırları ve fiyatı araştırılır.
+
+---
+(Eski düzen, artık kullanılmıyor:)
 # Düğme Instagram paylaşım düzeni (@otodugmemarketi)
 
 Kullanıcı isteği (1 Kasım 2026): paylaşımlar sürekli devam etsin, **saatte bir**, her gün 09:00–22:00 (Europe/Istanbul), günde 14 paylaşım.
